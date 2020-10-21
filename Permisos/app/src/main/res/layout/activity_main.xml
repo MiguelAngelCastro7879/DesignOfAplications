@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/camera_preview"
+        >
+        <Button
+            android:id="@+id/button_capture"
+            android:text="*"
+            android:textSize="30dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="7">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camara"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:layout_weight="10"
+            android:textSize="30dp"
+            android:onClick="solicitarpermisoCamara"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Archivos"
+            android:layout_margin="5dp"
+            android:layout_weight="10"
+            android:textSize="30dp"
+            android:onClick="solicitarpermisoAlmacenamiento"/>
+    </LinearLayout>
+</LinearLayout>

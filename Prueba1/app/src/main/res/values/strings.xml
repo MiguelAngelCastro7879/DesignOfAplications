@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Prueba1</string>
+    <string name="mode">mode</string>
+    <string name="edit">edit</string>
+    <string name="options">options</string>
+    <string name="help">help</string>
+</resources>
